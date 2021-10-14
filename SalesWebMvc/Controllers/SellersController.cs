@@ -52,6 +52,7 @@ namespace SalesWebMvc.Controllers
             return View(obj);
         }
 
+
         [HttpPost]
         [AutoValidateAntiforgeryToken]
         public IActionResult Delete(int id)
