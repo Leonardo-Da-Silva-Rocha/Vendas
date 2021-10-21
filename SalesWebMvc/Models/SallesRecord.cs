@@ -1,12 +1,15 @@
 ﻿using SalesWebMvc.Models.Enuns;
 using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace SalesWebMvc.Models
 {
     public class SallesRecord
     {
         public int Id { get; set; }
+        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}")]
         public DateTime Date { get; set; }
+        [DisplayFormat(DataFormatString ="{0:F2}")]
         public Double Amount { get; set; }
         public SallesStatus Status { get; set; }
 
